@@ -19,7 +19,7 @@ searchBtn.addEventListener('click',function(){
       return searchCount.appendChild(div);
     }
     
-    const url = `http://openlibrary.org/search.json?q=${search}`;
+    const url = `https://openlibrary.org/search.json?q=${search}`;
     searchInput.value = "";
     spinner.classList.remove('d-none');
     fetch(url)
