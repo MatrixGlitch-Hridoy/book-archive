@@ -12,9 +12,7 @@ searchBtn.addEventListener("click", () => {
   const div = document.createElement("div");
   div.classList.add("text-danger");
   if (search === "") {
-    div.innerHTML = `
-        <h5 class="text-center">Search field can not be empty</h5>
-    `;
+    div.innerHTML = `<h5 class="text-center">Search field can not be empty</h5>`;
     return searchCount.appendChild(div);
   }
   loadUser(search);
